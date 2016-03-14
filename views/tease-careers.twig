@@ -1,0 +1,18 @@
+<div class="p-careers__table-row">
+  <div class="p-careers__table-column">
+    <h1 class="p-careers__tease-title">
+      {{ post.title }}
+    </h1>
+    <p class="p-careers__tease-description">
+      {{ post.career_description | excerpt(30) }}
+    </p>
+  </div>
+  <div class="p-careers__table-column text-center">
+    <span class="p-careers__tease-date">
+      {{ post.post_date | date('d M Y') }}
+    </span>
+  </div>
+  <div class="p-careers__table-column text-right">
+    <a href="{{ post.career_link }}" target="_blank" class="p-careers__tease-apply">Apply Today ></a>
+  </div>
+</div>

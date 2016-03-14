@@ -1,0 +1,65 @@
+/*************************************************************************************
+* Global Header Styles
+*************************************************************************************/
+
+.navbar {
+  @include transition(all 300ms ease);
+
+  &.active {
+    background: rgba(13, 22, 29, 0.5);
+  }
+
+}
+
+.navbar-toggle {
+  padding: 20px 10px;
+
+  .icon-bar {
+    border: 1px solid #fff;
+  }
+
+}
+
+.navbar-nav>li>a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+
+  &.navbar__call-link {
+    color: #e7d722;
+  }
+
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+
+}
+
+.navbar-right {
+  text-transform: uppercase;
+}
+
+
+.navbar.navbar-theme-white {
+  background: #fff;
+  box-shadow: 0 1px 24px -11px #000;
+
+  .navbar-nav > li > a {
+    color: #6d7072;
+
+    &.navbar__call-link {
+      color: #8ac53f;
+    }
+
+  }
+
+  .navbar-toggle {
+    .icon-bar {
+      border: 1px solid #6D7072;
+    }
+  }
+
+}

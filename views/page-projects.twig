@@ -1,0 +1,49 @@
+{% extends "base.twig" %}
+
+{% set page = { "headerClass": "navbar-theme-white" } %}
+
+{% block content %}
+
+<div class="l-hero--medium" style="background-image:url('{{site.theme.link}}/img/raw/projects_banner.jpg')">
+  <div class="container">
+    <div class="row">
+      <h1 class="l-hero__title">
+        Projects
+      </h1>
+      <h2 class="l-hero__subtitle">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit.
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+{% block project_content %}
+<div class="l-basic-section">
+  <div class="container">
+    <div class="row">
+      {% for post in projects %}
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+<div class="m-callout-wide">
+  <div class="container">
+    <div class="row">
+      <h2 class="m-callout-wide__title">
+        Want something built? Our team of experts is
+        ready to take on your inquiries. <em>Contact us today.</em>
+      </h2>
+      <a href="/contact" class="m-callout-wide__link">SEND INQUIRY</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

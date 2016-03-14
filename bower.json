@@ -1,0 +1,31 @@
+{
+  "name": "underwood-wordpress-theme",
+  "version": "0.0.1",
+  "authors": [
+    "James Best <jim@justjibba.net>"
+  ],
+  "description": "Starter wordpress theme, includes Foundation, SCSS, Gulp, Twig",
+  "keywords": [
+    "Foundation",
+    "Gulp",
+    "SCSS"
+  ],
+  "license": "MIT",
+  "homepage": "www.justjibba.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2",
+    "lightbox2": "~2.7.1",
+    "slick-carousel": "~1.3.15",
+    "font-awesome": "~4.3.0",
+    "bourbon": "~4.2.3",
+    "bootstrap-sass": "~3.3.6"
+  }
+}

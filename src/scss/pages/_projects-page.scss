@@ -1,0 +1,149 @@
+/*************************************************************************************
+* Example Page
+*************************************************************************************/
+
+/*************************************************************************************
+* Fonts and Colours
+*************************************************************************************/
+
+/*************************************************************************************
+* Header Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Main Content Styles
+*************************************************************************************/
+
+.p-projects-tease {
+  position: relative;
+  height: 250px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover {
+    // background-size: 105%;
+
+    .p-projects-tease__inner {
+      visibility: visible;
+      opacity: 1;
+    }
+
+  }
+
+}
+
+  .p-projects-tease__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.52);
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all 300ms ease-in-out);
+  }
+
+    .p-projects-tease__inner-content {
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+
+      > h1 {
+        font-size: 16px;
+        font-weight: bold;
+
+        &:before {
+          content : " ";
+          background : #8ac53f;
+          width: 30px;
+          height: 3px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+      > p {
+        font-size: 12px;
+        font-weight: normal;
+      }
+
+    }
+
+// SINGLE POST PAGE
+
+.p-projects__single {}
+
+.p-projects__single-back {
+  padding: 20px 0;
+  color: #363e55;
+  background: #f9f9f9;
+  box-shadow: 0 1px 20px -11px #000;
+
+  a {
+    color: #363e55;
+    font-size: 20px;
+  }
+
+}
+
+  .p-projects__single-back-icon {
+    width: 30px;
+    margin-right: 15px;
+  }
+
+.p-projects__single-main-images {
+  width: 100%;
+}
+
+// content
+
+.p-projects-single-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+  .p-projects-single-content__header {
+
+    > h1 {
+      padding: 20px 0 30px 0;
+      margin-bottom: 30px;
+      color: #363e55;
+      font-size: 28px;
+      border-bottom: 1px solid #f3f3f3;
+    }
+
+  }
+
+  .p-projects-single-content__text {
+    margin-bottom: 80px;
+
+    .lead {
+      font-size: 20px;
+      color: #363e55;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 16px;
+      color: #9199b1;
+    }
+
+  }
+
+/*************************************************************************************
+* Sidebar Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Footer Styles
+*************************************************************************************/

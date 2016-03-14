@@ -1,0 +1,24 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <div class="small-12 large-8 columns">
+        <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            <section class="article-content">
+                <h1 class="article-h1">{{post.title}}</h1>
+
+                <div class="article-body">
+                    {{post.content}}
+
+                </div>
+            </section>
+
+        </article>
+    </div> <!-- /content-wrapper -->
+    {% if sidebar %}
+        <aside class="large-4 columns my-sidebar">
+            {% include ['sidebar.twig'] %}
+        </aside>
+    {% endif %}
+
+{% endblock %}

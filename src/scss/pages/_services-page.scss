@@ -1,0 +1,135 @@
+/*************************************************************************************
+* Example Page
+*************************************************************************************/
+
+/*************************************************************************************
+* Fonts and Colours
+*************************************************************************************/
+
+/*************************************************************************************
+* Header Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Main Content Styles
+*************************************************************************************/
+
+
+.p-services__content-title {
+  margin: auto;
+  max-width: 700px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #363e55;
+  text-align: center;
+  line-height: 40px;
+}
+
+.p-services__content-subtitle {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #9199b1;
+  text-align: center;
+  line-height: 23px;
+}
+
+.p-services-tease {
+  margin-bottom: 30px;
+}
+
+  .p-services-tease__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #363e55;
+  }
+
+  .p-services-tease__description {
+    font-size: 14px;
+    font-weight: normal;
+    color: #9199b1;
+  }
+
+  .p-services-tease__read-more {
+    font-weight: bold;
+    font-size: 14px;
+    color: #363e55;
+
+    &:hover {
+      color: #363e55;
+      text-decoration: none;
+    }
+
+  }
+
+
+  // SINGLE POST PAGE
+
+  .p-services__single {}
+
+  .p-services__single-back {
+    padding: 20px 0;
+    color: #363e55;
+    background: #f9f9f9;
+    box-shadow: 0 1px 20px -11px #000;
+
+    a {
+      color: #363e55;
+      font-size: 20px;
+    }
+
+  }
+
+    .p-services__single-back-icon {
+      width: 30px;
+      margin-right: 15px;
+    }
+
+  .p-services__single-main-images {
+    width: 100%;
+  }
+
+  // content
+
+  .p-services-single-content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+    .p-services-single-content__header {
+
+      > h1 {
+        padding: 20px 0 30px 0;
+        margin-bottom: 30px;
+        color: #363e55;
+        font-size: 28px;
+        border-bottom: 1px solid #f3f3f3;
+      }
+
+    }
+
+    .p-services-single-content__text {
+      margin-bottom: 80px;
+
+      .lead {
+        font-size: 20px;
+        color: #363e55;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        color: #9199b1;
+      }
+
+    }
+
+/*************************************************************************************
+* Sidebar Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Footer Styles
+*************************************************************************************/

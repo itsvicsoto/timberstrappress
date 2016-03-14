@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" {{site.language_attributes}} > <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" {{site.language_attributes}} > <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" {{site.language_attributes}} "> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" {{ site.language_attributes }} > <!--<![endif]-->
+<head>
+    <meta charset="{{ site.charset }}">
+
+    <title>{{ wp_title }}</title>
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- Favicon and Feed -->
+    <link rel="shortcut icon" type="image/png" href="{{site.theme.link}}/img/favicon32x32.ico">
+    <link rel="alternate" type="application/rss+xml" title="{{site.name}} Feed"
+          href="{{site.url}}/feed/">
+
+    <!--  iPhone Web App Home Screen Icon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.theme.link }}/img/devices/favicon32x32.ico"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.theme.link }}/img/devices/favicon32x32.ico"/>
+    <link rel="apple-touch-icon" href="{{ site.theme.link }}/img/devices/favicon32x32.ico"/>
+
+
+    {{ function('wp_head') }}

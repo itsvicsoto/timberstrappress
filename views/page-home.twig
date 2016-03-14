@@ -1,0 +1,115 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+  <div class="l-hero--big" style="background-image:url('{{site.theme.link}}/img/raw/home_hero_img.jpg')">
+    <div class="container">
+      <div class="row">
+        <h1 class="l-hero__title">
+          {{ post.main_title }}
+        </h1>
+        <h2 class="l-hero__subtitle">
+          {{ post.subtitle }}
+        </h2>
+        <a href="/about/company-profile" class="l-hero__learn-more">
+          LEARN MORE
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-callout--contact-us" data-ui="coloredHeaderTrigger">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="m-callout__title">Want something to build? Trust only the experts. Contact us today.</h3>
+          <a href="/contact" class="btn btn-lg m-callout__btn--contact-us">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="l-basic-section">
+    <div class="container">
+      <div class="row">
+        {% for item in [{ "title" : "Building and Engineering", "image" :  "/img/raw/home_img_blk1.png" },
+                        { "title" : "Architecture", "image" :  "/img/raw/home_img_blk2.png" },
+                        { "title" : "Reconstruction", "image" :  "/img/raw/home_img_blk3.png" }] %}
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="img-responsive" src="{{ site.theme.link }}{{ item.image }}" alt="" />
+            <h3>{{ item.title }}</h3>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.reprehenderit in voluptate velit.
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="l-basic-section-style-1 p-home__sectors">
+    <div class="container">
+      <div class="row">
+          <h1 class="p-home__sectors-big-title">The sectors we cater</h1>
+        {% for item in [{ "title" : "Commercial", "image" :  "/img/raw/commercial_icn.svg" },
+                        { "title" : "Residential", "image" :  "/img/raw/residential_icn.svg" },
+                        { "title" : "Industrial", "image" :  "/img/raw/industrial_icn.svg" }] %}
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="p-home__sectors-icon" src="{{ site.theme.link }}{{ item.image }}" alt="" />
+            <div class="p-home__sectors-content">
+              <h3 class="p-home__sectors-title">{{ item.title }}</h3>
+              <p class="p-home__sectors-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="l-bg-section p-home__stats" style="background-image: url('{{site.theme.link}}/img/raw/home_stats_img.jpg')">
+    <div class="container">
+      <div class="row">
+        <h1 class="p-home__stats-title">Lorem upsum dolor sit amet.</h1>
+        <ul class="p-home__stats-lists">
+          <li class="p-home__stats-lists-item">
+            <span class="item-value">100</span>
+            <span class="item-label">Projects Done</span>
+          </li>
+          <li class="p-home__stats-lists-item">
+            <span class="item-value">50+</span>
+            <span class="item-label">Satisfied Clients</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="l-basic-section-style-1 p-home__testimonials">
+    <div class="container">
+      <div class="row">
+          <h1 class="p-home__testimonials-big-title">What our clients say about us.</h1>
+        {% for item in [{ "title" : "John Smith", "subtitle": "President, ABC Company", "image" :  "/img/raw/about_person1.png" },
+                        { "title" : "John Doe", "subtitle": "President, ABC Company", "image" :  "/img/raw/about_person2.png" }] %}
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="p-home__testimonials-icon" style="background-image:url('{{ site.theme.link }}{{ item.image }}')" alt=""></div>
+            <div class="p-home__testimonials-content">
+              <h3 class="p-home__testimonials-title">{{ item.title }}</h3>
+              <h4 class="p-home__testimonials-subtitle">{{ item.subtitle }}</h4>
+              <p class="p-home__testimonials-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,105 @@
+/*************************************************************************************
+* Example Page
+*************************************************************************************/
+
+/*************************************************************************************
+* Fonts and Colours
+*************************************************************************************/
+
+/*************************************************************************************
+* Header Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Main Content Styles
+*************************************************************************************/
+
+.p-contact-bg {
+  padding-top: 100px;
+  background: #f5f5f8;
+
+  .l-hero--big {
+    padding-top: 75px;
+    // background-image: url('http://formgroupnsw.dev/wp-content/themes/formgroupnsw/img/raw/contact_bg.png');
+    background-size: contain;
+    background-position: 300px bottom;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.p-contact-form {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+
+  input, textarea {
+    padding: 20px 30px;
+    color: #404040;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .btn, input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    background: #8ac53f;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  span.wpcf7-not-valid-tip {
+    text-align: left;
+    padding: 10px 0;
+    letter-spacing: .5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .wpcf7-validation-errors {
+    display: block;
+    margin: 0;
+    border: 2px solid #FF8E00;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .wpcf7-mail-sent-ok {
+    display: block;
+    margin: 0;
+    border: 2px solid #398f14;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+}
+
+  .p-contact-form__info-lists {
+    margin: 0;
+    padding: 0;
+  }
+
+  .p-contact-form__header {
+    padding-bottom: 20px;
+    font-size: 28px;
+    color: #363e55;
+    text-align: left;
+  }
+
+
+/*************************************************************************************
+* Sidebar Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Footer Styles
+*************************************************************************************/

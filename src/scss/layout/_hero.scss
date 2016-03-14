@@ -1,0 +1,59 @@
+/*************************************************************************************
+* Hero Styles
+*************************************************************************************/
+
+.l-hero {
+  min-height: 700px;
+  background-size: cover;
+  padding-top: 250px;
+  text-align: center;
+}
+
+  .l-hero__title {
+    max-width: 700px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .l-hero__subtitle {
+    padding: 30px;
+    margin: auto;
+    max-width: 550px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .l-hero__learn-more {
+    display: inline-block;
+    padding: 20px 50px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.77);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+  }
+
+
+.l-hero--big {
+  @extend .l-hero;
+}
+
+.l-hero--medium {
+  @extend .l-hero;
+  min-height: 400px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}

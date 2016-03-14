@@ -1,0 +1,99 @@
+/*************************************************************************************
+* Example Page
+*************************************************************************************/
+
+/*************************************************************************************
+* Fonts and Colours
+*************************************************************************************/
+
+/*************************************************************************************
+* Header Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Main Content Styles
+*************************************************************************************/
+
+.p-careers__content-title {
+  margin: auto;
+  max-width: 700px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #363e55;
+  text-align: center;
+  line-height: 40px;
+}
+
+.p-careers__content-subtitle {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #9199b1;
+  text-align: center;
+  line-height: 23px;
+}
+
+// TABLE
+
+.p-careers__table {
+  display: table;
+  width: 100%;
+}
+
+  .p-careers__table-row {
+    display: table-row;
+
+    &--header {
+      @extend .p-careers__table-row;
+
+      .p-careers__table-column {
+        padding: 20px 0;
+        font-size: 16px;
+        font-weight: bold;
+        white-space: nowrap;
+        color: #363e55;
+        border-bottom: 1px solid #E1E2E8;
+        min-width: 200px;
+      }
+
+    }
+
+  }
+
+    .p-careers__table-column {
+      display: table-cell;
+      border-bottom: 1px solid #E1E2E8;
+      padding: 5px 0 20px 0;
+    }
+
+      .p-careers__tease-title {
+        font-size: 20px;
+        color: #363e55;
+      }
+      .p-careers__tease-description {
+        font-size: 14px;
+        color: #9199b1;
+        max-width: 400px;
+        letter-spacing: .5px;
+      }
+      .p-careers__tease-date {
+        font-size: 20px;
+        color: #363e55;
+        white-space: nowrap;
+      }
+      .p-careers__tease-apply {
+        font-size: 14px;
+        font-weight: bold;
+        color: #363e55;
+        white-space: nowrap;
+      }
+
+/*************************************************************************************
+* Sidebar Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Footer Styles
+*************************************************************************************/

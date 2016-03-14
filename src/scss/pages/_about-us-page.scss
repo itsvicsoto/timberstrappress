@@ -1,0 +1,114 @@
+/*************************************************************************************
+* Example Page
+*************************************************************************************/
+
+/*************************************************************************************
+* Fonts and Colours
+*************************************************************************************/
+
+
+
+.p-about-us {
+
+  h1 {
+    margin: 0 0 30px 0;
+    color: #363e55;
+  }
+
+  h1 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  h2, h3, h4, h5 {
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  p {
+    color: #7e859c;
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+
+}
+
+/*************************************************************************************
+* Header Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Main Content Styles
+*************************************************************************************/
+
+
+.p-about-us__sidebar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  .p-about-us__sidebar-item {
+    margin-bottom: 2px;
+    background: #f0f5f7;
+
+    > a {
+      display: block;
+      padding: 20px;
+      font-weight: bold;
+      color: #516167;
+
+      &.active {
+        border-left: 3px solid #8ac53f;
+      }
+
+    }
+
+  }
+
+.p-about-us__the-team {
+
+  a {
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+  .p-about-us__the-team-person {}
+
+  h3.p-about-us__the-team-person-name {
+    color: #363e55;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  h4.p-about-us__the-team-person-position {
+    font-style: italic;
+    color: #7e859c;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+  }
+
+  p.p-about-us__the-team-person-desc {
+    color: #7a7e8b;
+    font-size: 12px;
+  }
+
+  .p-about-us__the-team-link-icon {
+    width: 30px;
+    margin: 10px 10px 20px 0;
+  }
+
+/*************************************************************************************
+* Sidebar Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Footer Styles
+*************************************************************************************/

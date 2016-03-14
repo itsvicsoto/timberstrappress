@@ -1,0 +1,15 @@
+{% extends "tease.twig" %}
+
+
+{% block content %}
+
+<div class="p-services-tease">
+  <img class="img-responsive" src="{{ Image(post.service_thumbnail).src }}" alt="" />
+  <h2 class="p-services-tease__title">{{ post.title }}</h2>
+  <p class="p-services-tease__description">
+    {{ post.description }}
+  </p>
+  <a class="p-services-tease__read-more" href="{{ post.link }}">Read More ></a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <img class="footer__logo" src="{{ site.theme.link }}/img/raw/formgroup_logo.svg" alt="" />
+        <p class="footer__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incidid unt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <h5 class="footer__section-title">GET IN TOUCH</h5>
+        <ul class="footer__connect">
+          <li class="footer__connect-item">
+            <img class="footer__icon-mini" src="{{ site.theme.link }}/img/raw/footer_location.svg" alt="" />
+            Unit 6 ABC Building<br>
+            Melbourne, Victoria
+            Australia
+          </li>
+          <li class="footer__connect-item">
+            <img class="footer__icon-mini" src="{{ site.theme.link }}/img/raw/footer_phone.svg" alt="" />
+            (02) 1234 5678
+          </li>
+          <li class="footer__connect-item">
+              <img class="footer__icon-mini" src="{{ site.theme.link }}/img/raw/footer_mail.svg" alt="" />
+            contact@email.com
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <h5 class="footer__section-title">RECENT NEWS</h5>
+        <ul class="footer__recent-news">
+          <li class="footer__recent-news-item">
+            <p class="title">
+              Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incidi.
+            </p>
+            <div class="date">
+              <img class="footer__icon-mini" src="{{ site.theme.link }}/img/raw/footer_time.svg" alt="" />
+              <span>28 February 2016</span>
+            </div>
+          </li>
+          <li class="footer__recent-news-item">
+            <p class="title">
+              Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incidi.
+            </p>
+            <div class="date">
+              <img class="footer__icon-mini" src="{{ site.theme.link }}/img/raw/footer_time.svg" alt="" />
+              <span>28 February 2016</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <h5 class="footer__section-title">SUBSCRIBE</h5>
+        {% filter shortcodes %}
+        [wysija_form id="1"]
+        {% endfilter %}
+        <!-- <form class="footer__subscribe" action="index.html" method="post">
+          <div class="form-group">
+            <input type="text" name="name" value="" placeholder="Enter Full Name" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="name" value="" placeholder="Enter Email Address" class="form-control">
+          </div>
+          <button type="submit" name="button" class="btn btn-block btn-lg">Subscribe</button>
+        </form> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- &copy; {{"now"|date('Y')}} | Lovingly built with <a href="http://underwood.justjibba.net" target="_blank">Underwood</a> -->

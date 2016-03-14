@@ -1,0 +1,66 @@
+{% extends "base.twig" %}
+
+{% set page = { "headerClass": "navbar-theme-white" } %}
+
+{% block content %}
+
+<div class="l-hero--medium" style="background-image:url('{{site.theme.link}}/img/raw/careers_bg.jpg')">
+  <div class="container">
+    <div class="row">
+      <h1 class="l-hero__title">
+        Careers
+      </h1>
+      <h2 class="l-hero__subtitle">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit.
+      </h2>
+    </div>
+  </div>
+</div>
+
+<div class="l-basic-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="p-careers__content-title">
+          We are seeking talented individuals who wants
+          to be a part of an exciting team.
+        </h1>
+        <p class="p-careers__content-subtitle">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit.
+        </p>
+        <div class="p-careers__table">
+          <div class="p-careers__table-row--header">
+            <div class="p-careers__table-column">
+              Position
+            </div>
+            <div class="p-careers__table-column text-center">
+              Date Posted
+            </div>
+            <div class="p-careers__table-column"></div>
+          </div>
+          {% for post in careers %}
+            {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="m-callout-wide">
+  <div class="container">
+    <div class="row">
+      <h2 class="m-callout-wide__title">
+        Want something built? Our team of experts is
+        ready to take on your inquiries. <em>Contact us today.</em>
+      </h2>
+      <a href="/contact-us" class="m-callout-wide__link">SEND INQUIRY</a>
+    </div>
+  </div>
+</div> -->
+
+{% endblock %}

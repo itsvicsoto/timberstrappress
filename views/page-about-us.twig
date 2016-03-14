@@ -1,0 +1,45 @@
+{% extends "base.twig" %}
+
+{% set page = { "headerClass": "navbar-theme-white" } %}
+
+{% block content %}
+
+<div class="l-hero--medium" style="background-image:url('{{site.theme.link}}/img/raw/about_banner.jpg')">
+  <div class="container">
+    <div class="row">
+      <h1 class="l-hero__title">
+        About Us
+      </h1>
+      <h2 class="l-hero__subtitle">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+      </h2>
+    </div>
+  </div>
+</div>
+
+<div class="l-basic-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <ul class="p-about-us__sidebar">
+          <li class="p-about-us__sidebar-item">
+            <a href="/about/company-profile" class="{% if post.post_name == "company-profile"%} active {% endif %}">Company Profile</a>
+          </li>
+          <li class="p-about-us__sidebar-item">
+            <a href="/about/the-team" class="{% if post.post_name == "the-team"%} active {% endif %}">The Team</a>
+          </li>
+          <li class="p-about-us__sidebar-item">
+            <a href="/careers">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-9">
+        <div class="p-about-us">
+          {{ post.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

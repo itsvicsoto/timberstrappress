@@ -1,0 +1,134 @@
+/*************************************************************************************
+* Example Page
+*************************************************************************************/
+
+/*************************************************************************************
+* Fonts and Colours
+*************************************************************************************/
+
+/*************************************************************************************
+* Header Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Main Content Styles
+*************************************************************************************/
+
+.p-home__mini-box {
+
+}
+
+// SECTORS
+
+.p-home__sectors {
+
+}
+  .p-home__sectors-icon {
+    float: left;
+    width: 65px;
+  }
+
+  .p-home__sectors-big-title {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .p-home__sectors-content {
+    padding: 2px 10px 10px 80px;
+  }
+
+    .p-home__sectors-title {
+      margin: 0 0 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .p-home__sectors-info {
+      font-size: 14px;
+      color: #9199b1;
+    }
+
+// Testimonial
+
+// SECTORS
+
+.p-home__testimonials {
+
+}
+  .p-home__testimonials-icon {
+    float: left;
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    background-size: cover;
+  }
+
+  .p-home__testimonials-big-title {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .p-home__testimonials-content {
+    padding: 2px 10px 10px 80px;
+  }
+
+    .p-home__testimonials-title {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .p-home__testimonials-subtitle {
+      margin: 0 0 20px 0;
+      font-size: 14px;
+      font-weight: normal;
+      color: #8a8fa0;
+    }
+
+    .p-home__testimonials-info {
+      font-size: 13px;
+      color: #707689;
+    }
+
+// STATUS
+
+.p-home__stats {
+  color: #fff;
+  text-align: center;
+}
+
+  .p-home__stats-title {
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin-bottom: 75px;
+  }
+
+  .p-home__stats-lists {}
+
+    .p-home__stats-lists-item {
+      display: inline-block;
+      padding: 0 20px;
+
+      > .item-value {
+        display: block;
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      > .item-label {
+        display: block;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+    }
+
+/*************************************************************************************
+* Sidebar Styles
+*************************************************************************************/
+
+/*************************************************************************************
+* Footer Styles
+*************************************************************************************/

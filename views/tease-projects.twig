@@ -1,0 +1,19 @@
+{% extends "tease.twig" %}
+
+
+{% block content %}
+
+<div class="p-projects-tease" style="background-image: url('{{ Image(post.project_thumbnail).src }}')">
+  <a href="{{ post.link }}" class="p-projects-tease__inner">
+    <div class="p-projects-tease__inner-content">
+        <h1>
+          {{ post.title}}
+        </h1>
+      <p>
+        {{ post.project_description | excerpt(30) }}
+      </p>
+    </div>
+  </a>
+</div>
+
+{% endblock %}

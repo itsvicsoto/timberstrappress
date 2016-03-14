@@ -1,0 +1,21 @@
+/*************************************************************************************
+* Project Grid
+*************************************************************************************/
+
+
+.l-basic-section {
+  padding: 80px 0;
+}
+
+  .l-basic-section-style-1 {
+    @extend .l-basic-section;
+    background: #f2f4f8;
+  }
+
+// l-bg-section
+// desc:: section with background
+
+.l-bg-section {
+  padding: 80px 0;
+  background-size: cover;
+}

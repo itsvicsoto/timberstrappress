@@ -1,0 +1,113 @@
+/*************************************************************************************
+* Global Footer Styles
+*************************************************************************************/
+
+
+.footer {
+  padding: 50px 0;
+  background: #252e32;
+  color: #fff;
+}
+
+  .footer__section-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+
+  .footer__icon-mini {
+    float: left;
+    width: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer__logo {
+    width: 120px;
+    margin-bottom: 30px;
+  }
+
+  .footer__desc {
+    font-size: 12px;
+    line-height: 22px;
+    color: #949ea2;
+  }
+
+
+// connect
+
+.footer__connect {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+  .footer__connect-item {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #949ea2;
+    text-align: left;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+
+// news
+
+.footer__recent-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+  .footer__recent-news-item {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #949ea2;
+    text-align: left;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+    > .title {
+      line-height: normal;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    > .date {
+      font-size: 12px;
+    }
+
+  }
+
+// subscribe
+
+.footer__subscribe, .widget_wysija.shortcode_wysija {
+
+  input {
+    background: #3b4a50;
+    border: 0;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+  }
+
+  button, .wysija-submit {
+    padding: 20px;
+    background: #8ac53f;
+    font-weight: bold;
+    border-radius: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+}
