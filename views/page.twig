@@ -1,24 +1,32 @@
 {% extends "base.twig" %}
 
+{% set page = { "headerClass": "navbar-theme-white" } %}
+
 {% block content %}
 
-    <div class="small-12 large-8 columns">
-        <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-            <section class="article-content">
-                <h1 class="article-h1">{{post.title}}</h1>
+<div class="l-hero--medium" style="background-image:url('{{site.theme.link}}/img/raw/about_banner.jpg')">
+  <div class="container">
+    <div class="row">
+      <h1 class="l-hero__title">
+        {{ post.title }}
+      </h1>
+      <h2 class="l-hero__subtitle">
+        {{ post.description }}
+      </h2>
+    </div>
+  </div>
+</div>
 
-                <div class="article-body">
-                    {{post.content}}
-
-                </div>
-            </section>
-
-        </article>
-    </div> <!-- /content-wrapper -->
-    {% if sidebar %}
-        <aside class="large-4 columns my-sidebar">
-            {% include ['sidebar.twig'] %}
-        </aside>
-    {% endif %}
+<div class="p-one-page l-basic-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div style="max-width: 800px; margin: auto;">
+            {{ post.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
